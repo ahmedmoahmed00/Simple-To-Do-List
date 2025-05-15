@@ -1,6 +1,9 @@
 
 addDataFromStorage();
 
+
+// Add Stored Data
+
 function addDataFromStorage()
 {
   for (let index = 0; index < localStorage.length; index++) 
@@ -11,16 +14,20 @@ function addDataFromStorage()
   }
 }
 
+// Save Data To Local Storage
 function seveToLocalStorage (value,dataSet)
 {
   window.localStorage.setItem(dataSet,value);
 }
 
+// Remove Data From Local Storage
 function removeLocalStorageData(dataSet)
 {
   window.localStorage.removeItem(dataSet)
 }
 
+
+// Add Task To Page
 function addTaskToTasks(value,dataSet,isStorage = false)
 {
   let tasks = document.querySelector(".tasks");
@@ -46,7 +53,7 @@ function addTaskToTasks(value,dataSet,isStorage = false)
 
 let btnSubmit = document.querySelector(".add");
 
-
+// Validate On Click Data and Send To Function (AddTaskToTasks) ^^^^;
 btnSubmit.addEventListener("click",function()
 {
   let Task = document.querySelector(".input").value;
@@ -59,7 +66,7 @@ btnSubmit.addEventListener("click",function()
 
 let tasks = document.querySelector(".tasks");
 
-
+// Remove Data From LocalStorage And Page
 tasks.addEventListener("click", function(event)
 {
   if (event.target.className === "btn-del") 
