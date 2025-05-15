@@ -14,12 +14,12 @@
     overflow: hidden;
 }
 
-@media(max-width:767)
+@media (max-width:767px) 
 {
- .parent
- {
-   width:90%;
- }
+    .parent
+    {
+        width: 100%;   
+    }
 }
 
 .container
@@ -29,13 +29,14 @@
 }
 
 
-@media(max-width:767)
+@media (max-width:767px) 
 {
- .container
- {
-   width:100%;
- }
+    .container
+    {
+        width: 100%;   
+    }
 }
+
 
 .form
 {
@@ -57,10 +58,14 @@
 }
 input
 {
-    width: 90%;
+    width: 70%;
     border-radius: 5px;
     outline: none;
     border: 0;
+}
+@media (max-width:767px) 
+{
+
 }
 .tasks
 {
@@ -81,7 +86,7 @@ input
 }
 .tasks .task button
 {
-    width: 10%;
+    width: 20%;
     margin: 16px 0 16px 10px;
     cursor: pointer;
 }
