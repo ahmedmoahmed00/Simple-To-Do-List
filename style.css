@@ -1,0 +1,87 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+
+.parent
+{
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes rotate
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+
+.container
+{
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form
+{
+    padding: 20px;
+    background-color: #c3bdbd;
+    display: flex;
+    border-radius: 15px;
+}
+.add
+{
+    width: 100px;
+    background-color: rgb(232, 70, 70);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+input
+{
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+}
+.tasks
+{
+    margin-top: 20px;
+    background-color: #c3bdbd;
+    border-radius: 15px;
+}
+.tasks .task
+{
+    display: flex;
+    padding: 10px;
+}
+.tasks .task p
+{
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+}
+.tasks .task button
+{
+    width: 10%;
+    margin: 16px 0 16px 10px;
+    cursor: pointer;
+}
