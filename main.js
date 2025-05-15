@@ -1,9 +1,8 @@
 
+
 addDataFromStorage();
 
-
 // Add Stored Data
-
 function addDataFromStorage()
 {
   for (let index = 0; index < localStorage.length; index++) 
